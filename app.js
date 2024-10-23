@@ -30,7 +30,7 @@ app.use('/uploads', express.static('uploads')); // Serve static files from uploa
 // });
 
 // // Routes
-// app.use('/', listingRoutes);
+// app.use('/listings', listingRoutes);
 
 // // Start the server
 // const PORT = 3000;
@@ -39,7 +39,7 @@ app.use('/uploads', express.static('uploads')); // Serve static files from uploa
 // });
 
 
-app.use('/listings', listingRoutes);
+app.use('/', listingRoutes);
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
