@@ -30,7 +30,7 @@ app.use('/uploads', express.static('uploads')); // Serve static files from uploa
 // });
 
 // // Routes
-// app.use('/listings', listingRoutes);
+// app.use('/', listingRoutes);
 
 // // Start the server
 // const PORT = 3000;
